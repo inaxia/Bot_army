@@ -1,14 +1,14 @@
 # This code will take a few information from you like: (PROVIDE THESE DETAILS BEFORE RUNNING THE CODE)
 # Your email and password. (LINE: 9-11)
-# This code is still not completed because of 'the last line'.
+# Read 'the last line'.
 
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 
 # Enter some details
-email = 'your mail id'
-password = 'your password'
+email = 'email'
+password = 'password'
 
 # To click a button
 
@@ -56,27 +56,26 @@ clickButton(
 clickButton(
     '/html/body/div/form/div[1]/div/div[1]/div[2]/div/div[2]/div/div[3]/div[2]/div/div/div[2]/input', 0)
 
-#Use the web app button
+# Use the web app button
 clickButton('/html/body/promote-desktop/div/div/div/div[1]/div[2]/div/a', 5)
 
+clickAndType(
+    '/html/body/div[2]/div[1]/app-header-bar/div/power-bar/div/div/form/div[1]/input', 10, '19bce10119')
+
 # Calender button
-clickButton(
-    '/html/body/div[1]/div[2]/div[2]/div[1]/teams-grid/div/div[2]/div[1]/div/div/div[1]/div[4]/div[3]/div/ng-include/div', 5)
+# clickButton('/html/body/div[1]/div[2]/div[1]/app-bar/nav/ul/li[5]/button', 5)
 
-clickButton('/html/body/div[1]/div[2]/div[2]/div[1]/middle-messages-stripe/div/messages-header/div[2]/div/message-pane/div/div[1]/div/div/message-list/div/virtual-repeat/div/div[5]/div/thread/div/div[2]/calling-thread-header/div/calling-join-button/button', 3)
-
-# calender join utton
+# # Calender join utton
 # clickButton('/html/body/div[1]/div[2]/div[2]/div[1]/div/div/calendar-bridge/div/div[4]/div[2]/div/div/div[1]/div/div[3]/div[2]/div[3]/div[2]/div/div[2]/button', 5)
 
-#mic off button
-clickButton(
-    '/html/body/div[1]/div[2]/div[2]/div[1]/div/calling-pre-join-screen/div/div/div[2]/div[1]/div[2]/div/div/section/div[2]/toggle-button[2]/div/button/span[1]', 5)
+# # Mic off button
+# clickButton('/html/body/div[1]/div[2]/div[2]/div[1]/div/calling-pre-join-screen/div/div/div[2]/div[1]/div[2]/div/div/section/div[2]/toggle-button[2]/div/button/span[1]', 5)
 
-#camera off button
-clickButton(
-    '/html/body/div[1]/div[2]/div[2]/div[1]/div/calling-pre-join-screen/div/div/div[2]/div[1]/div[2]/div/div/section/div[2]/toggle-button[1]/div/button/span[1]', 5)
+# # Camera off button
+# clickButton('/html/body/div[1]/div[2]/div[2]/div[1]/div/calling-pre-join-screen/div/div/div[2]/div[1]/div[2]/div/div/section/div[2]/toggle-button[1]/div/button/span[1]', 5)
 
-#join button
-clickButton(
-    '/html/body/div[1]/div[2]/div[2]/div[1]/div/calling-pre-join-screen/div/div/div[2]/div[1]/div[2]/div/div/section/div[1]/div/div/button', 5)
-# the last line: I am not in any team now, so i haven't written any further code
+# # Join button
+# clickButton('/html/body/div[1]/div[2]/div[2]/div[1]/div/calling-pre-join-screen/div/div/div[2]/div[1]/div[2]/div/div/section/div[1]/div/div/button', 5)
+
+# the last line:
+# MICROSOFT TEAMS DOES'T ALLOW WEB AUTOMATION. THIS BOT WILL JUST STOP WORKING AS SOON AS IT WILL ENTER THE TEAMS.
